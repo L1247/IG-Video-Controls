@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "IG Video Progressbar",
+  "version": "1.0.0",
+  "description": "Add a YouTube-style seekable progress bar to Instagram videos",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
